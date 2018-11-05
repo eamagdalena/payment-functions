@@ -1,5 +1,5 @@
 {
-  "version": "1.0",
+  "version": "2.0",
   "aggregator": {
     "batchSize": 1000,
     "flushTimeout": "00:00:30"
@@ -7,7 +7,13 @@
   "extensions": {
     "http": {},
     "queues": {},
-    "serviceBus": {}
+    "serviceBus": {
+      "prefetchCount": 100,
+      "messageHandlerOptions": {
+        "maxConcurrentCalls": 32,
+        "maxAutoRenewDuration": "00:55:00"
+      }
+    }
   },
   "healthMonitor": {
     "enabled": true,
