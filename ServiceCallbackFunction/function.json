@@ -1,0 +1,12 @@
+{
+  "bindings": [
+    {
+      "queueName": "queue1",
+      "connection": "ServiceCallbackBusConnection",
+      "name": "serviceCallback",
+      "type": "ServiceBusQueueTrigger",
+      "direction": "in"
+    }
+  ],
+  "disabled": false
+}
