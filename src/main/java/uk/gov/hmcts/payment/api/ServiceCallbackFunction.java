@@ -8,13 +8,16 @@ import com.microsoft.azure.serverless.functions.annotation.ServiceBusQueueTrigge
 public class ServiceCallbackFunction {
 
     @FunctionName("serviceCallback")
-    public void serviceCallback(
+    public static void serviceCallback(
             @ServiceBusQueueTrigger(connection = "ServiceCallbackBusConnection", queueName = "queue1", name = "serviceCallback") String req,
             @BindingName("service-callback-url") String serviceCallbackUrl,
             ExecutionContext context) {
 
-        context.getLogger().warning(req);
-        context.getLogger().warning(serviceCallbackUrl);
+        if(context != null) {
+            context.getLogger().warning(req);
+            context.getLogger().warning(serviceCallbackUrl);
+        }
+
     }
 
 }

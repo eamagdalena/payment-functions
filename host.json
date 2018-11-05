@@ -1,2 +1,19 @@
 {
+  "version": "1.0",
+  "aggregator": {
+    "batchSize": 1000,
+    "flushTimeout": "00:00:30"
+  },
+  "extensions": {
+    "http": {},
+    "queues": {},
+    "serviceBus": {}
+  },
+  "healthMonitor": {
+    "enabled": true,
+    "healthCheckInterval": "00:00:10",
+    "healthCheckWindow": "00:02:00",
+    "healthCheckThreshold": 6,
+    "counterThreshold": 0.80
+  }
 }

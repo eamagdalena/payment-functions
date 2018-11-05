@@ -10,8 +10,7 @@ public class ServiceCallbackFunctionTest {
     public void testHello() throws Exception {
         final ServiceCallbackFunction function = new ServiceCallbackFunction();
 
-        final String ret = function.health("function", null);
+        function.serviceCallback("function", "coco", null);
 
-        assertEquals("{status : 'OK'}", ret);
     }
 }

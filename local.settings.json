@@ -1,7 +1,9 @@
 {
   "IsEncrypted": false,
   "Values": {
-    "AzureWebJobsStorage": "",
-    "AzureWebJobsDashboard": ""
+    "FUNCTIONS_WORKER_RUNTIME": "node",
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=paymentsfunctio94a3;AccountKey=T1TlsF886c+9aSt/zvjtkTErGHPRZXAlTvSP3zh1p26nLbB9iHPnUOkogXMViYEQC4Cgf52ueI+vkzEU/KDJMA==",
+    "AzureWebJobsServiceCallbackBusConnection" : "Endpoint=sb://payments-servicebus-aat.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=dyBRMhF+0TUZken+uFTFEN58sLY4FSIzPH89311Z9qQ=",
+    "ServiceCallbackBusConnection" : "Endpoint=sb://payments-servicebus-aat.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=dyBRMhF+0TUZken+uFTFEN58sLY4FSIzPH89311Z9qQ="
   }
 }
